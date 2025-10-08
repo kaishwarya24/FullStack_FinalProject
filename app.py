@@ -12,13 +12,13 @@ from werkzeug.security import generate_password_hash, check_password_hash
 load_dotenv()
 
 app = Flask(__name__)
-app.secret_key = 'e31641d3c807dae1b760ce979abdb8253261941faf0996bd2db02edaa2de3eae'
+app.secret_key = '' # due to security issue i removed the API key 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
-    api_key="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"
+    api_key="" # # due to security issue i removed the API key 
 )
 db = SQLAlchemy(app)
 
