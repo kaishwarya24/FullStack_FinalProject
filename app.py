@@ -18,7 +18,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
-    api_key="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"
+    api_key="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"
 )
 db = SQLAlchemy(app)
 
