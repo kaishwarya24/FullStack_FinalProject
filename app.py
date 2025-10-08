@@ -18,7 +18,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
-    api_key="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"
+    api_key="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"
 )
 db = SQLAlchemy(app)
 
@@ -71,7 +71,6 @@ AI_PERSONALITIES = {
     'comedy': "Write with humor, wit, and comedic timing. Make it funny!",
     'thriller': "Write with suspense, tension, and unexpected twists",
     'scifi': "Write with futuristic concepts, technology, and scientific imagination",
-    # Indian directors
     'rajkumar_hirani': "Write with warmth, humor, and social commentary, in the style of Rajkumar Hirani (think 3 Idiots, Munna Bhai).",
     'ss_rajamouli': "Write with epic scale, grand visuals, and heroic drama, in the style of S. S. Rajamouli (think Baahubali, RRR).",
     'zoya_akhtar': "Write with urban realism, layered characters, and contemporary themes, in the style of Zoya Akhtar (think Zindagi Na Milegi Dobara, Gully Boy).",
